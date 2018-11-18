@@ -1,4 +1,4 @@
-# A Clojure Fusion of Symbolic and Data Driven AI
+## A Clojure Fusion of Symbolic and Data Driven AI
 
 REP: a DSL for Building Conversational Agent
 
@@ -7,7 +7,14 @@ REP: a DSL for Building Conversational Agent
 ### AI is back
 
 - Thrice born of AI
-- Rise of deep learning
+
++++
+
+### Rise of deep learning (DL)
+
+- Breakthrough in ImageNet
+- AlphaGo beats human
+- DL explodes: AI = DL for many
 
 ---
 
@@ -22,6 +29,8 @@ REP: a DSL for Building Conversational Agent
 
 - Bottom-up: data driven, sub-symbolic
 - Top-down: goal driven, symbolic
+
+---
 
 ### Time to Bring back Symbolic AI
 
