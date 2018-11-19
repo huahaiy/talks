@@ -33,7 +33,6 @@ Juji, Inc.
   - fixed length vectors (embedding)
 
 ---
-@transition[none]
 
 ### Perception is not yet Intelligence
 
@@ -42,7 +41,7 @@ Juji, Inc.
 @snapend
 
 @snap[east]
-<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="400"/>
+<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="420"/>
 @snapend
 
 ---
