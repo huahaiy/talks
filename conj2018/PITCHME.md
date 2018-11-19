@@ -44,12 +44,9 @@ Juji, Inc.
 @snapend
 
 @snap[east]
-<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="320"/>
+<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="400"/>
 @snapend
 
-@snap[south]
-- Perception is just a beginning component of intelligence
-@snapend
 ---
 
 ### Perception may Feel like Intelligence
