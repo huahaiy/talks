@@ -29,14 +29,16 @@ Juji, Inc.
 
 - Map raw data into
   - known labels (classification)
-  - desirable values (regression)
+  - desirable numbers (regression)
   - fixed length vectors (embedding)
 
 ---
 
 ### Perception is not yet Intelligence
 
+@snap[west]
 ![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
+@snapend
 - Perception is just a beginning component
 
 ---
