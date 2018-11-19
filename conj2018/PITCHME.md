@@ -34,7 +34,9 @@ Juji, Inc.
 
 ---
 
+@snap[north]
 ### Perception is not yet Intelligence
+@snapend
 
 @snap[west]
 ![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
