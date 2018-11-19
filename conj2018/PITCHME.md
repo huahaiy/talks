@@ -17,7 +17,7 @@ Juji, Inc.
 
 ### Rise of Deep Learning (DL)
 
-- Neural network with many layers
+- Neural networks with many layers
 - Recently hugely successful
 - For many: AI = DL
 
@@ -33,19 +33,28 @@ Juji, Inc.
   - fixed length vectors (embedding)
 
 ---
+@transition[none]
 
+@snap[north]
 ### Perception is not yet Intelligence
+@snapend
 
 @snap[west]
+![Cognitive Psychology](asset/img/cognitive-psychology-toc.png)
+@snapend
+
+@snap[east]
 ![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
 @snapend
-- Perception is just a beginning component
 
+@snap[south]
+- Perception is just a beginning component of intelligence
+@snapend
 ---
 
 ### Perception may Feel like Intelligence
 
-- Surprising Number of Cognitive Problems Can be Solved as Perception Problems
+- Cognitive problems may be solved in surprising ways as perception problems
 
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 
