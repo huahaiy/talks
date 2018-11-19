@@ -34,7 +34,7 @@ Juji, Inc.
 
 ---
 
-@snap[north]
+@snap[north span-100]
 ### Perception is not yet Intelligence
 @snapend
 
