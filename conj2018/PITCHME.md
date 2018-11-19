@@ -44,7 +44,7 @@ Juji, Inc.
 @snapend
 
 @snap[east]
-![Cognitive Psychology TOC](asset/img/cognitive-psychology-toc.png)
+<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="320"/>
 @snapend
 
 @snap[south]
