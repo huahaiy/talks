@@ -1,31 +1,41 @@
 ## A Clojure Fusion of Symbolic and Data Driven AI
 
-REP: a DSL for Building Conversational Agent
+Huahai Yang
+Juji, Inc.
 
 ---
 
-### AI is back
+### AI Summer is Back with Rise of Deep Learning (DL)
 
-- Thrice born of AI
+- Watson Jeopardy
+- AlphaGo beats human
+- Many AI assistants on phone, in home
+- Many commercial products in enterprises
+- AI = DL for many
+
+---
+
+### DL Solves Perception Problem
+
+Perception
+: Perception (from the Latin __perceptio_) is the organization, identification, and interpretation of sensory information in order to represent and understand the presented information, or the environment
 
 +++
 
-### Rise of deep learning (DL)
-
-- Breakthrough in ImageNet
-- AlphaGo beats human
-- DL explodes: AI = DL for many
-
----
-
-### Deep Learning Solves Perception
-
-- Definition of perception
-- Surprising number of problems can be solved as perception problems
-
----
-
 ### Perception is not yet Intelligence, but its Beginning
+
+![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
+
++++
+
+### Surprising Number of Cognitive Problems Can be Solved as Perception Problems
+
+![Bobby Fischer](asset/img/BobbyFischer.jpg)
+
+
++++
+
+### Data Driven Alone is Insufficient for Solving Perception
 
 - Bottom-up: data driven, sub-symbolic
 - Top-down: goal driven, symbolic
