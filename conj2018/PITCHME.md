@@ -40,11 +40,11 @@ Juji, Inc.
 @snapend
 
 @snap[west]
-![Cognitive Psychology](asset/img/cognitive-psychology-toc.png)
+![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
 @snapend
 
 @snap[east]
-![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
+![Cognitive Psychology TOC](asset/img/cognitive-psychology-toc.png)
 @snapend
 
 @snap[south]
