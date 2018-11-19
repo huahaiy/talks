@@ -1,11 +1,12 @@
 ## A Clojure Fusion of Symbolic and Data Driven AI
 
 Huahai Yang
+<br>
 Juji, Inc.
 
 ---
 
-### AI Summer is Back with Rise of Deep Learning (DL)
+### AI is Back with Rise of Deep Learning (DL)
 
 - Watson Jeopardy
 - AlphaGo beats human
