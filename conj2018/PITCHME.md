@@ -19,7 +19,7 @@ Juji, Inc.
 
 - Neural networks with many layers
 - Recently hugely successful
-- For many: AI = DL
+- For many: @color[red](AI = DL)
 
 ---
 
@@ -27,7 +27,7 @@ Juji, Inc.
 
 @quote[Perception is the organization, identification, and interpretation of sensory information in order to represent and understand the presented information, or the environment.]
 
-- Map raw data into
+- DL maps raw data into:
   - known labels (classification)
   - desirable numbers (regression)
   - fixed length vectors (embedding)
@@ -43,30 +43,35 @@ Juji, Inc.
 @snapend
 
 @snap[east]
-<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="420"/>
+<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="480"/>
 @snapend
 
 ---
 
 ### Perception may Feel like Intelligence
 
-- Cognitive problems may be solved in surprising ways as perception problems
 
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 
+- Cognitive problems may be solved in surprising ways as perception problems
 
 ---
 
 ### Perception cannot be Solved with Data Alone
 
-- Bottom-up: data driven, sub-symbolic
-- Top-down: goal driven, symbolic
+- Top-down
+  - goal driven
+  - symbolic (human-readable)
+
+- Bottom-up
+  - data driven
+  - sub-symbolic
 
 ---
 
 ### Time to Bring back Symbolic AI
 
-- Concept of symbolic AI
+- Most successful was expert systems: a network of production rules
 - The same forces leading to the rise of DL apply to symbolic AI
   - More powerful hardware
   - Better software tools
@@ -87,7 +92,8 @@ Juji, Inc.
 
 ### Build a Conversational Agent Platform
 
-- It is easy to pass Turing Test: has been done in 60s'
+- It is easy to pass Turing Test: been done in 70s'
+  - Parry
 - It is harder to build **useful** conversational agent
 
 ---
@@ -95,8 +101,9 @@ Juji, Inc.
 ### Weakness of Data Driven Conversational Systems
 
 - Easy to defeat/abuse by adversaries
+  - Tay
 - Hard to debug and bend it to the creator's will
-- Both are by design, no fixable
+- By design, no fixable
 
 ---
 
@@ -104,7 +111,7 @@ Juji, Inc.
 
 - Easy to build rigid/brittle systems
 - Hard for humans to think like machines
-- Both are fixable with *enough* human efforts
+- Fixable with *enough* human efforts
 
 ---
 
@@ -126,7 +133,19 @@ Juji, Inc.
 
 ### Deftopic: the Building Block
 
-- Hello World!
+```
+(deftopic hello-world
+  []
+
+  []
+  ["Hello world!"])
+
+```
+
+@[1]
+@[2]
+@[4]
+@[5]
 
 ---
 
