@@ -6,37 +6,51 @@ Juji, Inc.
 
 ---
 
-### AI is Back with Rise of Deep Learning (DL)
+### AI is Back
 
 - Watson Jeopardy
 - AlphaGo beats human
-- Many AI assistants on phone, in home
+- Many AI assistants on phone and in home
 - Many commercial products in enterprises
-- AI = DL for many
+
+---
+
+### Rise of Deep Learning (DL)
+
+- Neural network with many layers
+- Recently hugely successful
+- For many: AI = DL
 
 ---
 
 ### DL Solves Perception Problem
 
-Perception
-: Perception (from the Latin __perceptio_) is the organization, identification, and interpretation of sensory information in order to represent and understand the presented information, or the environment
+@quote[Perception is the organization, identification, and interpretation of sensory information in order to represent and understand the presented information, or the environment.]
 
-+++
+- Map raw data into
+  - known labels (classification)
+  - desirable values (regression)
+  - fixed length vectors (embedding)
 
-### Perception is not yet Intelligence, but its Beginning
+---
+
+### Perception is not yet Intelligence
 
 ![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
+- Perception is just a beginning component
 
-+++
+---
 
-### Surprising Number of Cognitive Problems Can be Solved as Perception Problems
+### Perception may Feel like Intelligence
+
+- Surprising Number of Cognitive Problems Can be Solved as Perception Problems
 
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 
 
-+++
+---
 
-### Data Driven Alone is Insufficient for Solving Perception
+### Perception cannot be Solved with Data Alone
 
 - Bottom-up: data driven, sub-symbolic
 - Top-down: goal driven, symbolic
@@ -50,7 +64,7 @@ Perception
   - More powerful hardware
   - Better software tools
   - More abundant data
-- (Semi)-solving perception lays the foundation for symbolic AI
+- (Semi)Solving perception lays the foundation for symbolic AI
 
 ---
 
@@ -83,7 +97,7 @@ Perception
 
 - Easy to build rigid/brittle systems
 - Hard for humans to think like machines
-- Both are fixable with enough human efforts
+- Both are fixable with *enough* human efforts
 
 ---
 
@@ -91,7 +105,7 @@ Perception
 
 - Symbolic system as the bones
   - for its potential for growth and adaptability, despite the rigidity
-- DL/ML components as the flesh
+- DL/ML component as the flesh
   - for its flexibility and ease of development, despite the obscurities
 
 ---
@@ -132,13 +146,6 @@ Perception
 
 ---
 
-### Meta-circularity: Entity Extraction as an Example
-
-- Turn a topic into a function
-- Use the function in a topic
-
----
-
 ### Embed DL/ML are Functions
 
 - Neural networks are universal **function** approximator,
@@ -157,6 +164,13 @@ Perception
 - Cover specific cases missed by DL
 
 ---
+### Meta-circularity: Entity Extraction as an Example
+
+- Turn a topic into a function
+- Use the function in a topic
+
+---
+
 ###  Generate Code from GUI
 
 - Generate topics as data
@@ -170,10 +184,6 @@ Perception
 ---
 
 ### Putting Together: Juji Architecture
-
----
-
-### Demo of Juji
 
 ---
 
