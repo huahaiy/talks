@@ -8,7 +8,7 @@ Juji, Inc.
 
 ### AI is Back
 
-- Watson Jeopardy
+- Watson Jeopardy beats human
 - AlphaGo beats human
 - Many AI assistants on phone and in home
 - Many commercial products in enterprises
@@ -163,7 +163,7 @@ Top-down
 
 ### Production Rule
 
-- Rule: Trigger (if),  Action (then) and Followup Topics
+- Rule: trigger (if),  action (then) and associated followup topics
 - Followup topics are primed when a rule fired
 
 ```clojure
@@ -271,7 +271,8 @@ Top-down
   - detailed refinement
 
 ```clojure
-[(input-in-this-category? "self-intro-relevance" 0.7)]
+[(input-in-this-category? "self-intro-relevance"
+                          0.7)]
 ([programming]
  "You must be a smart person."
 
@@ -281,10 +282,10 @@ Top-down
  "Thank you for the introduction.")
 ```
 
-@[1]
-@[2-3]
-@[5-6]
-@[8]
+@[1=2]
+@[3-4]
+@[6-7]
+@[9]
 
 ---
 
