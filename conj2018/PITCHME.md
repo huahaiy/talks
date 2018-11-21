@@ -57,7 +57,9 @@ Juji, Inc.
 
 ---
 
+@snap[north span-100]
 ### Perception Cannot be Solved with Data Alone
+@snapend
 
 @snap[west]
 - Bottom-up processing
@@ -86,29 +88,27 @@ Juji, Inc.
 
 ### Weaknesses of Data Driven vs Symbolic Systems
 
-@snap[west]
-- Easy to defeat/abuse by adversaries
-  - Tay
-- Hard to debug and bend it to the creator's will
-- By design, unlikely to be fixable
-@snapend
+Data driven
+  - Easy to defeat/abuse by adversaries
+    - Tay
+  - Hard to debug and bend it to the creator's will
+  - By design, unlikely to be fixable
 
-@snap[east]
-- Easy to build rigid/brittle systems
-- Hard to develop, for it is hard for human to think like machines
-- Fixable with *enough* human efforts
-@snapend
+Symbolic
+  - Easy to build rigid/brittle systems
+  - Hard to develop, for it is hard for human to think like machines
+  - Fixable with *enough* human efforts
 
 ---
 ### Two Roads to Integrate Symbolic with Sub-symbolic
 
 1. Extract symbols out of sub-symbolic, then put symbols back
-  - Mimic nature
-  - Not yet practical
+    - Mimic nature
+    - Not yet practical
 
 2. Symbolic + sub-symbolic
-  - Engineer's method
-  - Practical today
+    - Engineer's method
+    - Practical today
 
 ---
 
