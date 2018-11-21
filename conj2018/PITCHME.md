@@ -81,11 +81,11 @@ Top-down
 
 ### Time to Bring back Symbolic AI
 
-- (Semi)solving perception lays the foundation for symbolic AI
+- (Semi-)solving perception lays the foundation for symbolic AI
 - The same forces leading to the rise of DL apply to symbolic AI
   - More powerful hardware
-  - Better software tools
-  - More abundant data
+  - Better software tools and practices
+  - More abundant realistic data
 
 ---
 
