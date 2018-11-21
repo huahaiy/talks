@@ -241,8 +241,10 @@ Top-down
 ["You must be a smart person"]
 ```
 
-- Patterns are `and`ed together in a rule
-- Rules are `or`ed together, so a topic matches a DNF
+@[2]
+
+- Patterns are `and` together in a rule
+- Rules are `or` together, so a topic matches a DNF
 
 ---
 
@@ -270,7 +272,8 @@ Top-down
 
 ```clojure
 [(input-in-this-category? "self-intro-relevance" 0.7)]
-([programming] "You must be a smart person."
+([programming]
+ "You must be a smart person."
 
  [art]
  "I enjoy art too."
@@ -278,9 +281,10 @@ Top-down
  "Thank you for the introduction.")
 ```
 
-@[1-2]
-@[3-7]
-@[9]
+@[1]
+@[2-3]
+@[5-6]
+@[8]
 
 ---
 
@@ -290,10 +294,13 @@ Top-down
 
 ```clojure
 [(create-topic-func
-   custom/why-u-here :extract-why-u-here)
+    custom/why-u-here :extract-why-u-here)
  "I see, you are here to "
  (exec-topic-func :extract-why-u-here)]
 ```
+
+@[1-2]
+@[4]
 
 - Topics may even be generated on the fly
 
@@ -312,7 +319,7 @@ Top-down
 
 ### Juji Architecture
 
-
+![Uji architecture](asset/img/juji-architecture.png)
 
 ---
 
