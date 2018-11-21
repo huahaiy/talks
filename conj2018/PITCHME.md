@@ -84,7 +84,7 @@ Juji, Inc.
 
 - Extract symbols out of sub-symbolic, then put symbols back to sub-symbolic
   - Mimic nature
-  - Note yet practical
+  - Not yet practical
 
 - Symbolic + sub-symbolic
   - Engineer's method
@@ -96,7 +96,7 @@ Juji, Inc.
 
 - It is easy to pass Turing Test: been done in 70s'
   - Parry
-- It is harder to build useful conversational agents
+- It is harder to build **useful** conversational agents
 
 ---
 
@@ -105,7 +105,7 @@ Juji, Inc.
 - Easy to defeat/abuse by adversaries
   - Tay
 - Hard to debug and bend it to the creator's will
-- By design, no fixable
+- By design, unlikely to be fixable
 
 ---
 
@@ -228,7 +228,10 @@ Juji, Inc.
 - Neural networks are universal **function** approximator, should be used as such
 
 ```clojure
-[programming (input-in-this-category? "self-intro-relevance" 0.7)]
+[programming
+ (input-in-this-category?
+   "self-intro-relevance"
+   0.7)]
 ["You must be a smart person"]
 ```
 - Patterns are implicitly `and` together in a rule
@@ -241,10 +244,11 @@ Juji, Inc.
 - Calculate similarity based on Tensorflow sentence embedding
 
 ```clojure
-[(> (max-similarity-score ["What does your product cost?"
-                           "How much does your product cost?"
-                           "What's the price of your product?"
-                           "How expensive is your product?"])
+[(> (max-similarity-score
+     ["What does your product cost?"
+      "How much does your product cost?"
+      "What's the price of your product?"
+      "How expensive is your product?"])
     0.9)]
 ```
 ---
@@ -254,7 +258,8 @@ Juji, Inc.
 - ML/DL models cover broad cases
 - Rules cover specific cases missed by DL/ML, or refine match to specific cases
 ```clojure
-[(input-in-this-category? "self-intro-relevance" 0.7)]
+[(input-in-this-category?
+   "self-intro-relevance" 0.7)]
 ([programming]
  "You must be a smart person."
 
@@ -265,9 +270,9 @@ Juji, Inc.
 ```
 - Branched rule is essentially a decision tree
 
-@[1]
-@[2-6]
-@[8]
+@[1-2]
+@[3-7]
+@[9]
 
 ---
 
@@ -276,8 +281,10 @@ Juji, Inc.
 - Turn a topic into a function, use the function in a topic
 
 ```clojure
-[(create-topic-func custom/why-u-here :extract-why-u-here)
- "I see, you are here to " (exec-topic-func :extract-why-u-here)]
+[(create-topic-func
+   custom/why-u-here :extract-why-u-here)
+ "I see, you are here to "
+ (exec-topic-func :extract-why-u-here)]
 ```
 - REP compiler can be called at runtime, so topics may even be generated on the fly
 
@@ -295,6 +302,8 @@ Juji, Inc.
 ---
 
 ### Putting Together: Juji Architecture
+
+
 
 ---
 
