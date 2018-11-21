@@ -133,7 +133,7 @@ Top-down
 ### REP: a Chatbot Authoring DSL
 
 - Used for interview/survey
-- 2x completion rate, 26% better quality responses
+- 2X completion rate, 26% better quality responses
 
 @quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
 
@@ -185,11 +185,11 @@ Top-down
 ```clojure
 (deftopic greetings
   []
-  {:include-before [(norning-greetings)
-                    (evening-greetings)]})
+  {:include-before [(morning-greetings)
+                    (evening-greetings)]}
 
- [:1 hello hi hey howdy]
- ["Hello"]
+  [:1 hello hi hey howdy]
+  ["Hello"])
 
 ```
 @[3-4]
@@ -302,14 +302,13 @@ Top-down
 @[1-2]
 @[4]
 
-- Topics may even be generated on the fly
 
 ---
 
 ### Automatic Dialog Management
 
 - REP is a declarative language
-- System push topics around as data
+- System pushes topics around
   - Agenda queue
   - Ad-lib queue
   - Exception queue
@@ -336,7 +335,7 @@ Top-down
 
 ### Conclusion
 
-- Clojure is a good choice for doing practical AI
+- Clojure is a great choice for doing practical AI
   - Lisp was and still is the language of symbolic AI
   - Data orientation of Clojure makes it easy to integrate symbolic and data-driven AI
 
