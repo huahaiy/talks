@@ -89,15 +89,14 @@ Top-down
 
 ---
 
-### Weaknesses of Data Driven vs Symbolic Systems
+### Trade-offs
 
-Data driven
-  - Easy to defeat/abuse by adversaries
-    - Tay
+- Data driven
+  - Easy to defeat/abuse by adversaries (e.g. Tay)
   - Hard to debug and bend it to the creator's will
   - By design, unlikely to be fixable
 
-Symbolic
+- Symbolic
   - Easy to build rigid/brittle systems
   - Hard to develop, for it is hard for human to think like machines
   - Fixable with *enough* human efforts
@@ -105,11 +104,11 @@ Symbolic
 ---
 ### Two Roads to Integrate Symbolic with Sub-symbolic
 
-1. Extract symbols out of sub-symbolic, then put symbols back
+- Extract symbols out of sub-symbolic, then put symbols back
     - Mimic nature
     - Not yet practical
 
-2. Symbolic + sub-symbolic
+- Symbolic + sub-symbolic
     - Engineer's method
     - Practical today
 
@@ -126,8 +125,7 @@ Symbolic
 
 ### Build a Conversational Agent Platform
 
-- It is easy to pass Turing Test: been done in 70s'
-  - Parry
+- It is easy to pass Turing Test: been done in 70s' (Parry)
 - It is harder to build **useful** conversational agents
 
 ---
@@ -139,14 +137,7 @@ Symbolic
 
 @quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
 
-@snap[south-west span-60]
 @quote[very dynamic and very fluid conversation you have great quality thanks]
-@snapend
-
-@snap[south-west span-40]
-@quote[You are my new best friend Juji!]
-@snapend
-
 
 ---
 
