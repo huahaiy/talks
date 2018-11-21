@@ -81,7 +81,6 @@ Top-down
 
 ### Time to Bring back Symbolic AI
 
-- Most successful were expert systems: a network of production rules
 - (Semi)solving perception lays the foundation for symbolic AI
 - The same forces leading to the rise of DL apply to symbolic AI
   - More powerful hardware
@@ -135,14 +134,18 @@ Symbolic
 
 ### REP: a Conversational Agent Authoring Language
 
-- Responsible Empathetic Persona, used for interview/surveys
+- Used for interview/surveys
 - 2x completion rate, 26% better quality responses
 
 @quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
 
+@snap[south-west span-60]
 @quote[very dynamic and very fluid conversation you have great quality thanks]
+@snapend
 
+@snap[south-west span-40]
 @quote[You are my new best friend Juji!]
+@snapend
 
 
 ---
