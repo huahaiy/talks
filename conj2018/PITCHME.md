@@ -61,13 +61,13 @@ Juji, Inc.
 ### Perception Cannot be Solved with Data Alone
 @snapend
 
-@snap[west]
+@snap[west list-content-concise span-50]
 - Bottom-up processing
   - data driven
   - sub-symbolic
 @snapend
 
-@snap[east]
+@snap[east list-content-concise span-50]
 - Top-down processing
   - goal/hypothesis driven
   - symbolic (human-readable)
