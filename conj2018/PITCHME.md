@@ -59,13 +59,17 @@ Juji, Inc.
 
 ### Perception Cannot be Solved with Data Alone
 
+@snap[west]
 - Bottom-up processing
   - data driven
   - sub-symbolic
+@snapend
 
+@snap[east]
 - Top-down processing
-  - goal driven
+  - goal/hypothesis driven
   - symbolic (human-readable)
+@snapend
 
 ---
 
@@ -80,40 +84,31 @@ Juji, Inc.
 
 ---
 
-### Two Roads to Integrate Symbolic with Sub-symbolic
+### Weaknesses of Data Driven vs Symbolic Systems
 
-- Extract symbols out of sub-symbolic, then put symbols back to sub-symbolic
-  - Mimic nature
-  - Not yet practical
-
-- Symbolic + sub-symbolic
-  - Engineer's method
-  - Practical today
-
----
-
-### Build a Conversational Agent Platform
-
-- It is easy to pass Turing Test: been done in 70s'
-  - Parry
-- It is harder to build **useful** conversational agents
-
----
-
-### Weakness of Data Driven Conversational Systems
-
+@snap[west]
 - Easy to defeat/abuse by adversaries
   - Tay
 - Hard to debug and bend it to the creator's will
 - By design, unlikely to be fixable
+@snapend
 
----
-
-### Weakness of Symbolic Conversational Systems
-
+@snap[east]
 - Easy to build rigid/brittle systems
 - Hard to develop, for it is hard for human to think like machines
 - Fixable with *enough* human efforts
+@snapend
+
+---
+### Two Roads to Integrate Symbolic with Sub-symbolic
+
+1. Extract symbols out of sub-symbolic, then put symbols back
+  - Mimic nature
+  - Not yet practical
+
+2. Symbolic + sub-symbolic
+  - Engineer's method
+  - Practical today
 
 ---
 
@@ -126,11 +121,25 @@ Juji, Inc.
 
 ---
 
-### REP: a Clojure based Practical Conversational AI
+### Build a Conversational Agent Platform
 
-- Responsible Empathetic Persona
-- Lisp was and still is the language of Symbolic AI
-- Data orientation of Clojure makes it easy to integrate symbolic and data-driven AI
+- It is easy to pass Turing Test: been done in 70s'
+  - Parry
+- It is harder to build **useful** conversational agents
+
+---
+
+### REP: a Conversational Agent Authoring Language
+
+- Responsible Empathetic Persona, used for interview/surveys
+- 2x completion rate, 26% better quality responses
+
+@quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
+
+@quote[very dynamic and very fluid conversation you have great quality thanks]
+
+@quote[You are my new best friend Juji!]
+
 
 ---
 
@@ -167,13 +176,13 @@ Juji, Inc.
 
 @[1]
 @[2]
-@[3] followup topics are primed when the rule is fired
+@[3]
 
 ---
 
 ### Topic Compositions
 
-- a topic may include rules of other topics
+- A topic may include rules of other topics
 
 ```clojure
 (deftopic greetings
@@ -191,7 +200,7 @@ Juji, Inc.
 
 ### Patterns
 
-- Just data, regular expression for tokens
+- Just data, token based regular expressions
 
 ```clojure
 [I love :1-. pizza]
@@ -204,10 +213,10 @@ Juji, Inc.
 @[3] start pattern and a string pattern, where no lemmatization is done
 ---
 
-### Tag and Class Patterns
+### ML Based Tag and Class Patterns
 
 - Tags for annotating text, keywords for placeholders of content classes
-- Parts of speech, phrases, and entities are backed by ML models
+- Parts of speech, phrases, and entities
 
 ```clojure
 [he #pos/verb dog tree]
@@ -253,10 +262,12 @@ Juji, Inc.
 ```
 ---
 
-### Roles of ML/DL vs. Rules
+### Roles of ML/DL vs. Symbolic
 
 - ML/DL models cover broad cases
-- Rules cover specific cases missed by DL/ML, or refine match to specific cases
+- Symbolic covers specific cases
+  - misses by DL/ML
+  - detailed refinement
 ```clojure
 [(input-in-this-category?
    "self-intro-relevance" 0.7)]
@@ -278,7 +289,7 @@ Juji, Inc.
 
 ### Meta-circularity
 
-- Turn a topic into a function, use the function in a topic
+- Turn a topic into a function, then use the function in another topic
 
 ```clojure
 [(create-topic-func
@@ -293,7 +304,7 @@ Juji, Inc.
 ### Automatic Dialog Management
 
 - REP is a declarative language where system controls the flow
-- Topics are pushed around
+- Topics are pushed around as data
   - Agenda queue
   - Ad-lib queue
   - Exception queue
@@ -321,3 +332,18 @@ Juji, Inc.
 ### Conclusion
 
 - Clojure is a good choice for doing practical AI
+  - Lisp was and still is the language of symbolic AI
+  - Data orientation of Clojure makes it easy to integrate symbolic and data-driven approach
+
+---
+
+@snap[east span-50]
+![QUESTIONS?](template/img/questions-4.png)
+@snapend
+
+@snap[south-west ]
+Huahai Yang
+Juji, Inc.
+https://juji.io
+
+@snapend
