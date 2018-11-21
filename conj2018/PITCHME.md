@@ -62,15 +62,15 @@ Juji, Inc.
 @snapend
 
 @snap[west list-content-concise span-50]
-- Bottom-up processing
-  - data driven
-  - sub-symbolic
+* Bottom-up processing
+  * data driven
+  * sub-symbolic
 @snapend
 
 @snap[east list-content-concise span-50]
-- Top-down processing
-  - goal/hypothesis driven
-  - symbolic (human-readable)
+* Top-down processing
+  * goal/hypothesis driven
+  * symbolic (human-readable)
 @snapend
 
 ---
