@@ -282,8 +282,6 @@ Top-down
  "Thank you for the introduction.")
 ```
 
-- Branched rule: a decision tree
-
 @[1-2]
 @[3-7]
 @[9]
@@ -324,12 +322,12 @@ Top-down
 
 ###  EDN Data all the Way
 
-1. User select template
+![Uji workflow](asset/img/juji-workflow.png)
+
+1. User select chat template
 2. User configure chat in GUI
 3. Generate script from GUI
-4. User chat: script compiles
-5. User chat: script runs
-6. Chat results
+4. Chat: script compiles and runs
 
 ---
 
