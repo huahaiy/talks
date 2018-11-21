@@ -102,7 +102,7 @@ Top-down
   - Fixable with *enough* human efforts
 
 ---
-### Two Roads to Integrate Symbolic with Sub-symbolic
+### Two Roads to Integration
 
 - Extract symbols out of sub-symbolic, then put symbols back
     - Mimic nature
@@ -130,9 +130,9 @@ Top-down
 
 ---
 
-### REP: a Conversational Agent Authoring Language
+### REP: a Conversational Agent Authoring DSL
 
-- Used for interview/surveys
+- Used for interview/survey
 - 2x completion rate, 26% better quality responses
 
 @quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
@@ -161,7 +161,7 @@ Top-down
 
 ---
 
-### Rule
+### Production Rule
 
 - Rule: Trigger (if),  Action (then) and Followup Topics
 - Followup topics are primed when a rule fired
@@ -198,7 +198,7 @@ Top-down
 
 ### Patterns
 
-- Just data, token based regular expressions
+- Token based regular expressions
 
 ```clojure
 [I love :1-. pizza]
@@ -277,7 +277,7 @@ Top-down
 
  "Thank you for the introduction.")
 ```
-- Branched rule is essentially a decision tree
+- Branched rule: a decision tree
 
 @[1-2]
 @[3-7]
@@ -295,14 +295,14 @@ Top-down
  "I see, you are here to "
  (exec-topic-func :extract-why-u-here)]
 ```
-- REP compiler can be called at runtime, so topics may even be generated on the fly
+- Topics may even be generated on the fly
 
 ---
 
 ### Automatic Dialog Management
 
-- REP is a declarative language where system controls the flow
-- Topics are pushed around as data
+- REP is a declarative language
+- System push topics around as data
   - Agenda queue
   - Ad-lib queue
   - Exception queue
@@ -310,7 +310,7 @@ Top-down
 
 ---
 
-### Putting Together: Juji Architecture
+### Juji Architecture
 
 
 
@@ -331,7 +331,7 @@ Top-down
 
 - Clojure is a good choice for doing practical AI
   - Lisp was and still is the language of symbolic AI
-  - Data orientation of Clojure makes it easy to integrate symbolic and data-driven approach
+  - Data orientation of Clojure makes it easy to integrate symbolic and data-driven AI
 
 ---
 
