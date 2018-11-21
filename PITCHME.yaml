@@ -38,7 +38,8 @@ footnote : "GitPitch - The Fastest Way From Idea To Presentation"
 # Highlight (Code) Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
-highlight : atom-one-dark
+highlight : monokai
+code-line-numbers : true
 
 #
 # Layout Setting
@@ -53,3 +54,13 @@ layout : center
 # https://gitpitch.com/docs/layout-features/snap-layout-slide-transitions
 #
 transition : none
+
+#
+# Load everything upfront
+#
+eager-loading : true
+
+#
+# Google Analytics
+#
+gatoken : UA-108804735-2

@@ -50,43 +50,45 @@ Juji, Inc.
 
 ### Perception may Feel like Intelligence
 
+- Intellectual problems may be solved in surprising ways as perceptual problems
 
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 
-- Cognitive problems may be solved in surprising ways as perception problems
 
 ---
 
-### Perception cannot be Solved with Data Alone
+### Perception Cannot be Solved with Data Alone
 
-- Top-down
-  - goal driven
-  - symbolic (human-readable)
-
-- Bottom-up
+- Bottom-up processing
   - data driven
   - sub-symbolic
+
+- Top-down processing
+  - goal driven
+  - symbolic (human-readable)
 
 ---
 
 ### Time to Bring back Symbolic AI
 
-- Most successful was expert systems: a network of production rules
+- Most successful were expert systems: a network of production rules
+- (Semi)solving perception lays the foundation for symbolic AI
 - The same forces leading to the rise of DL apply to symbolic AI
   - More powerful hardware
   - Better software tools
   - More abundant data
-- (Semi)Solving perception lays the foundation for symbolic AI
 
 ---
 
 ### Two Roads to Integrate Symbolic with Sub-symbolic
 
-- Neural network -> symbolic -> neural network
-  - Mimic nature's method
+- Extract symbols out of sub-symbolic, then put symbols back to sub-symbolic
+  - Mimic nature
+  - Note yet practical
 
-- Symbolic + Neural network
+- Symbolic + sub-symbolic
   - Engineer's method
+  - Practical today
 
 ---
 
@@ -94,7 +96,7 @@ Juji, Inc.
 
 - It is easy to pass Turing Test: been done in 70s'
   - Parry
-- It is harder to build **useful** conversational agent
+- It is harder to build useful conversational agents
 
 ---
 
@@ -110,7 +112,7 @@ Juji, Inc.
 ### Weakness of Symbolic Conversational Systems
 
 - Easy to build rigid/brittle systems
-- Hard for humans to think like machines
+- Hard to develop, for it is hard for human to think like machines
 - Fixable with *enough* human efforts
 
 ---
@@ -126,6 +128,7 @@ Juji, Inc.
 
 ### REP: a Clojure based Practical Conversational AI
 
+- Responsible Empathetic Persona
 - Lisp was and still is the language of Symbolic AI
 - Data orientation of Clojure makes it easy to integrate symbolic and data-driven AI
 
@@ -133,7 +136,9 @@ Juji, Inc.
 
 ### Deftopic: the Building Block
 
-```
+- Topic: a set of rules
+
+```clojure
 (deftopic hello-world
   []
 
@@ -149,67 +154,158 @@ Juji, Inc.
 
 ---
 
-### Production Rules: the Mortar
+### Rule
 
-- Triggers => DNF
-- Actions
+- Rule: Trigger (if),  Action (then) and Followup Topics
+- Followup topics are primed when a rule fired
 
----
+```clojure
+[:1 hello hi hey howdy]
+["Nice to meet you!"]
+(talk-about-wheather)
+```
 
-### Patterns: the Bricks
-
-- Just data
-- Optimized for speed
-
----
-
-### Tagged Literals: Annotating Text
-
-- Parts of speech
-- Phrases
-- Entities
-- Regular expression tokens
+@[1]
+@[2]
+@[3] followup topics are primed when the rule is fired
 
 ---
 
-### Embed DL/ML are Functions
+### Topic Compositions
 
-- Neural networks are universal **function** approximator,
-- Should be used as such
+- a topic may include rules of other topics
+
+```clojure
+(deftopic greetings
+  []
+  {:include-before [(norning-greetings)
+                    (evening-greetings)]})
+
+ [:1 hello hi hey howdy]
+ ["Hello"]
+
+```
+@[3-4]
+
+---
+
+### Patterns
+
+- Just data, regular expression for tokens
+
+```clojure
+[I love :1-. pizza]
+[I love ? [:1- pizza bacon sausage]]
+[:0. "I love pizza"]
+```
+
+@[1] sequence pattern with a wild card
+@[2] sequence patterh with an one or nothing and a multiple alternative
+@[3] start pattern and a string pattern, where no lemmatization is done
+---
+
+### Tag and Class Patterns
+
+- Tags for annotating text, keywords for placeholders of content classes
+- Parts of speech, phrases, and entities are backed by ML models
+
+```clojure
+[he #pos/verb dog tree]
+[she love :phrase/NP]
+[I work at :entity/org]
+[it will be done in :entity/duration]
+```
+
+@[1]
+@[2]
+@[3]
+@[4]
+
+---
+
+### DL/ML for Classification Functions
+
+- Neural networks are universal **function** approximator, should be used as such
+
+```clojure
+[programming (input-in-this-category? "self-intro-relevance" 0.7)]
+["You must be a smart person"]
+```
+- Patterns are implicitly `and` together in a rule
+- Rules are `or`ed together, so a topic matches a DNF
 
 ---
 
 ### DL for Similarity Based Matches
 
-- Tensorflow USE
+- Calculate similarity based on Tensorflow sentence embedding
+
+```clojure
+[(> (max-similarity-score ["What does your product cost?"
+                           "How much does your product cost?"
+                           "What's the price of your product?"
+                           "How expensive is your product?"])
+    0.9)]
+```
+---
+
+### Roles of ML/DL vs. Rules
+
+- ML/DL models cover broad cases
+- Rules cover specific cases missed by DL/ML, or refine match to specific cases
+```clojure
+[(input-in-this-category? "self-intro-relevance" 0.7)]
+([programming]
+ "You must be a smart person."
+
+ [art]
+ "I enjoy art too."
+
+ "Thank you for the introduction.")
+```
+- Branched rule is essentially a decision tree
+
+@[1]
+@[2-6]
+@[8]
 
 ---
 
-### Rules to Fix Bugs
+### Meta-circularity
 
-- Cover specific cases missed by DL
+- Turn a topic into a function, use the function in a topic
 
----
-### Meta-circularity: Entity Extraction as an Example
-
-- Turn a topic into a function
-- Use the function in a topic
-
----
-
-###  Generate Code from GUI
-
-- Generate topics as data
+```clojure
+[(create-topic-func custom/why-u-here :extract-why-u-here)
+ "I see, you are here to " (exec-topic-func :extract-why-u-here)]
+```
+- REP compiler can be called at runtime, so topics may even be generated on the fly
 
 ---
 
 ### Automatic Dialog Management
 
-- Push topics around as data
+- REP is a declarative language where system controls the flow
+- Topics are pushed around
+  - Agenda queue
+  - Ad-lib queue
+  - Exception queue
+  - Main stack
 
 ---
 
 ### Putting Together: Juji Architecture
+
+---
+
+###  Data all the Way
+
+1. User select template
+2. User configure chat
+3. Generate script from configuration
+4. User chat: script compiles
+5. User chat: script runs
+6. Chat results
 
 ---
 
