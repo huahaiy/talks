@@ -114,7 +114,7 @@ Top-down
 
 ---
 
-### Practical AI = Symbolic + Data Driven
+### Symbolic + Data Driven
 
 - Symbolic system as the bones
   - for its potential for growth and adaptability, despite the rigidity
@@ -130,7 +130,7 @@ Top-down
 
 ---
 
-### REP: a Conversational Agent Authoring DSL
+### REP: a Chatbot Authoring DSL
 
 - Used for interview/survey
 - 2x completion rate, 26% better quality responses
@@ -209,6 +209,7 @@ Top-down
 @[1] sequence pattern with a wild card
 @[2] sequence patterh with an one or nothing and a multiple alternative
 @[3] start pattern and a string pattern, where no lemmatization is done
+
 ---
 
 ### ML Based Tag and Class Patterns
@@ -241,14 +242,15 @@ Top-down
    0.7)]
 ["You must be a smart person"]
 ```
-- Patterns are implicitly `and` together in a rule
+
+- Patterns are `and`ed together in a rule
 - Rules are `or`ed together, so a topic matches a DNF
 
 ---
 
 ### DL for Similarity Based Matches
 
-- Calculate similarity based on Tensorflow sentence embedding
+- Calculate similarity using Tensorflow sentence embedding
 
 ```clojure
 [(> (max-similarity-score
@@ -258,6 +260,7 @@ Top-down
       "How expensive is your product?"])
     0.9)]
 ```
+
 ---
 
 ### Roles of ML/DL vs. Symbolic
@@ -266,6 +269,7 @@ Top-down
 - Symbolic covers specific cases
   - misses by DL/ML
   - detailed refinement
+
 ```clojure
 [(input-in-this-category?
    "self-intro-relevance" 0.7)]
@@ -277,6 +281,7 @@ Top-down
 
  "Thank you for the introduction.")
 ```
+
 - Branched rule: a decision tree
 
 @[1-2]
@@ -295,6 +300,7 @@ Top-down
  "I see, you are here to "
  (exec-topic-func :extract-why-u-here)]
 ```
+
 - Topics may even be generated on the fly
 
 ---
@@ -316,11 +322,11 @@ Top-down
 
 ---
 
-###  Data all the Way
+###  EDN Data all the Way
 
 1. User select template
-2. User configure chat
-3. Generate script from configuration
+2. User configure chat in GUI
+3. Generate script from GUI
 4. User chat: script compiles
 5. User chat: script runs
 6. Chat results
@@ -339,9 +345,11 @@ Top-down
 ![QUESTIONS?](template/img/questions-4.png)
 @snapend
 
-@snap[south-west ]
+@snap[west span-50]
 Huahai Yang
+<br>
 Juji, Inc.
+<br>
 https://juji.io
 
 @snapend
