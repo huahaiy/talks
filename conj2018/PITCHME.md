@@ -237,9 +237,7 @@ Top-down
 
 ```clojure
 [programming
- (input-in-this-category?
-   "self-intro-relevance"
-   0.7)]
+ (input-in-this-category? "self-intro-relevance" 0.7)]
 ["You must be a smart person"]
 ```
 
@@ -263,7 +261,7 @@ Top-down
 
 ---
 
-### Roles of ML/DL vs. Symbolic
+### Roles
 
 - ML/DL models cover broad cases
 - Symbolic covers specific cases
@@ -271,10 +269,8 @@ Top-down
   - detailed refinement
 
 ```clojure
-[(input-in-this-category?
-   "self-intro-relevance" 0.7)]
-([programming]
- "You must be a smart person."
+[(input-in-this-category? "self-intro-relevance" 0.7)]
+([programming] "You must be a smart person."
 
  [art]
  "I enjoy art too."
