@@ -17,13 +17,15 @@ Juji, Inc.
 @css[bio-byline](@fa[github pad-fa] huahaiy @fa[twitter pad-fa])
 <br>
 ![Huahai](asset/img/huahai.png)
+<br>
+@css[bio-tagline](Cofounder & CTO, Juji Inc.)
 @snapend
 
 ---
 
 ### Juji Builds Chatbot Platform
 
-- It is easy to pass Turing Test, been done in 70s'
+- It is easy to pass Turing Test, done in 70s'
   - PARRY: 33 psychiatrists cannot tell it from paranoid patients
 
 ![Parry](asset/img/parry.png)
@@ -38,10 +40,11 @@ Juji, Inc.
 @ul[](false)
 - It is harder to build **useful** chatbots
   - interview people to collect feedback
-  - help students learn
+  - receive visitors to sites
   - screen job candidates
-  - check up on patients
-  - receive visitors
+  - check up on trainees
+  - help students learn
+  - recommend books
 @ulend
 @snapend
 
@@ -67,7 +70,7 @@ Juji, Inc.
 ![Juji DSL](asset/img/dsl.png)
 @snapend
 
----
+---?image=asset/img/ai-summer-75.png
 
 ### AI Summer is Back
 
@@ -406,8 +409,8 @@ Top-down
 
 ### Conclusion
 
-- Symbolic + data driven = practical AI
-- Clojure is a great choice
+- Symbolic + data driven = practical AI today
+- Clojure is a great choice for doing so
   - Lisp was and still is the language of symbolic AI
   - Data orientation of Clojure makes it easy to integrate both
 
