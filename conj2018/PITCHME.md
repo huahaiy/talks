@@ -25,7 +25,8 @@ Juji, Inc.
 
 ### Juji Builds Chatbot Platform
 
-- It is easy to pass Turing Test, been done in 70s' w/ PARRY
+- It is easy to pass Turing Test, been done in 70s'
+- PARRY, 33 psychiatrists cannot tell from paranoid patients
 
 ![Parry](asset/img/parry.png)
 
@@ -35,7 +36,8 @@ Juji, Inc.
 ### Juji Builds Chatbot Platform
 @snapend
 
-@snap[west]
+@snap[west span-40]
+@ul[](false)
 - It is hard to build **useful** chatbots
   - interview people to collect feedback
   - help students learn concepts
@@ -43,9 +45,10 @@ Juji, Inc.
   - check up on patients
   - receive visitors
   - conduct market research
+@ulend
 @snapend
 
-@snap[east]
+@snap[east span-60]
 ![Juji chat](asset/img/juji-chat.png)
 @snapend
 
