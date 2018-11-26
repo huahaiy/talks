@@ -18,7 +18,7 @@ Juji, Inc.
 <br>
 ![Huahai](asset/img/huahai.png)
 <br>
-@css[bio-tagline](Cofounder & CTO, Juji Inc.)
+@css[bio-tagline](Cofounder & CTO<br>Juji Inc.)
 @snapend
 
 ---
@@ -87,13 +87,15 @@ Juji, Inc.
 - Recently hugely successful
 - For many: @color[red](AI = DL)
 
+![DL](asset/img/dl.png)
+
 ---
 
 ### DL Solves Perception Problem
 
 @quote[Perception is the organization, identification, and interpretation of sensory information in order to represent and understand the presented information, or the environment.]
 
-- DL maps raw data into:
+- DL maps raw data (pixels, text characters) into:
   - known labels (classification)
   - desirable numbers (regression)
   - fixed length vectors (embedding)
