@@ -32,7 +32,7 @@ Juji, Inc.
 
 ---
 
-@snap[north-west span-100]
+@snap[north span-100]
 ### Juji Builds Chatbot Platform
 @snapend
 
