@@ -40,11 +40,10 @@ Juji, Inc.
 @ul[](false)
 - It is hard to build **useful** chatbots
   - interview people to collect feedback
-  - help students learn concepts
+  - help students learn
   - screen job candidates
   - check up on patients
   - receive visitors
-  - conduct market research
 @ulend
 @snapend
 
