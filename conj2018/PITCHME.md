@@ -10,7 +10,7 @@ Juji, Inc.
 @snap[west]
 @css[bio-about](Cognitive psychologist<br>Computer scientist)
 <br><br><br>
-@css[bio-about](Clojure programmer since 2012)
+@css[bio-about](Coding in Clojure since 2012)
 @snapend
 
 @snap[east bio]
@@ -18,59 +18,44 @@ Juji, Inc.
 <br>
 @css[bio-byline](@fa[github pad-fa] huahaiy @fa[twitter pad-fa])
 <br>
-![](asset/img/huahai.png)
+![Huahai](asset/img/huahai.png)
 @snapend
 
 ---
 
-@snap[north span-100]
 ### Juji Builds Chatbot Platform
 
-- It is easy to pass Turing Test: been done in 70s' (PARRY)
-@snapend
+- It is easy to pass Turing Test, been done in 70s' w/ PARRY
 
-@snap[west list-content-concise span-50]
-@ul[](false)
-- The law should get those Italian crooks
-- Do you know any Italian crooks?
-- I try to avoid the underworld
-- Are you afraid of the underworld?
-- The mafia are the worst gangsters.
-- Are you connected with the Mafia?
-- You know, they know me.
-- How do they know you?
-- They spy on me.
-- Are you sure of all this?
-- You don't believe me?
-@ulend
-@snapend
+![Parry](asset/img/parry.png)
 
-@snap[west list-content-concise span-50]
-@ul[](false)
-- Is the law after you?
-- The law should get those Italian crooks.
-- Do you mean the Mafia?
-- Let's talk about something else
-- Are you afraid of the Mafia
-- I'd rather not discuss it's
-- Perhaps you are paranoid about them?
-- You want to keep me in the hospital
-@ulend
-@snapend
 ---
 
+@snap[north-west]
 ### Juji Builds Chatbot Platform
+@snapend
 
-- It is harder to build **useful** conversational agents
+@snap[west]
+- It is hard to build **useful** chatbots
   - interview people to collect feedback
   - help students learn concepts
   - screen job candidates
+  - check up on patients
+  - receive visitors
+  - conduct market research
+@snapend
+
+@snap[east]
+![Juji chat](asset/img/juji-chat.png)
+@snapend
+
+---
 
 ### Juji Approach: Symbolic + Data Driven
 
 - Symbolic system as the bones
-  - export systems: networks of production rules
 - Data-driven component as the flesh
+- In a Clojure DSL
 
 ---
 
