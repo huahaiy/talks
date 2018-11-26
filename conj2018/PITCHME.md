@@ -62,8 +62,8 @@ Juji, Inc.
 
 @snap[south list-content span-100]
 @ul[](false)
-- Reporter: "How many moves do you see ahead while playing chess?"
-- Capablanca: "Only one, but it's always the right one."
+- @size[18](Reporter: "How many moves do you see ahead while playing chess?")
+- @size[18](Capablanca: "Only one, but it's always the right one.")
 @ulend
 @snapend
 
