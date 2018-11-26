@@ -57,7 +57,7 @@ Juji, Inc.
 ### Juji Approach:<br>Symbolic + Data Driven
 @snapend
 
-@snap[west span-60]
+@snap[west span-65]
 @ul[](false)
 - Symbolic system as the bones
 - Data-driven component as the flesh
@@ -65,7 +65,7 @@ Juji, Inc.
 @ulend
 @snapend
 
-@snap[east span-40]
+@snap[east span-35]
 ![Juji DSL](asset/img/dsl.png)
 @snapend
 
