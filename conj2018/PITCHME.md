@@ -8,9 +8,7 @@ Juji, Inc.
 
 ---
 @snap[west]
-@css[bio-about](Academically trained psychologist)
-<br><br><br>
-@fa[terminal fa-3x bio-fa](geek)
+@css[bio-about](Cognitive psychologist<br>Computer scientist)
 <br><br><br>
 @css[bio-about](Clojure programmer since 2012)
 @snapend
@@ -21,8 +19,6 @@ Juji, Inc.
 @css[bio-byline](@fa[github pad-fa] huahaiy @fa[twitter pad-fa])
 <br>
 ![](asset/img/huahai.png)
-<br>
-@css[bio-tagline](Seeing is not believing)
 @snapend
 
 ---
