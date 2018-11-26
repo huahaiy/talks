@@ -52,11 +52,11 @@ Juji, Inc.
 ### Perception Feels like Intelligence
 @snapend
 
-@snap[west span-50]
+@snap[west span-40]
 ![Capablanca](asset/img/capablanca.jpg)
 @snapend
 
-@snap[east span-50]
+@snap[east span-40]
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 @snapend
 
