@@ -48,11 +48,8 @@ Juji, Inc.
 
 ---
 
-### Perception may Feel like Intelligence
-
 @snap[north span-100]
-Reporter: "How many moves do you see ahead while playing chess?"
-Capablanca: "Only one, but it's always the right one."
+### Perception may Feel like Intelligence
 @snapend
 
 @snap[west span-50]
@@ -61,6 +58,11 @@ Capablanca: "Only one, but it's always the right one."
 
 @snap[east span-50]
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
+@snapend
+
+@snap[south list-content span-100]
+- Reporter: "How many moves do you see ahead while playing chess?"
+- Capablanca: "Only one, but it's always the right one."
 @snapend
 
 
