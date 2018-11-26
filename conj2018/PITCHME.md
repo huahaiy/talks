@@ -177,7 +177,7 @@ Top-down
 - Symbolic
   - Easy to build rigid/brittle systems
   - Hard to develop, for it is hard for human to think like machines
-  - Fixable with *enough* human efforts
+  - In principle, fixable with *enough* human efforts
 
 ---
 ### Two Roads to Integration
@@ -217,11 +217,11 @@ Top-down
 - Topic: a set of rules
 
 ```clojure
-(deftopic hello-world
-  []
+(deftopic hello-world ; topic name
+  []                  ; parameters
 
-  []
-  ["Hello world!"])
+  []                  ; trigger
+  ["Hello world!"])   ; action
 
 ```
 
@@ -238,9 +238,9 @@ Top-down
 - Followup topics are primed when a rule fired
 
 ```clojure
-[:1 hello hi hey howdy]
-["Nice to meet you!"]
-(talk-about-wheather)
+[:1 hello hi hey howdy] ; trigger: an alternative pattern
+["Nice to meet you!"]   ; action: a string output
+(talk-about-wheather)   ; a followup topic invocation
 ```
 
 @[1]
@@ -272,9 +272,9 @@ Top-down
 - Token based regular expressions
 
 ```clojure
-[I love :1-. pizza]
-[I love ? [:1- pizza bacon sausage]]
-[:0. "I love pizza"]
+[I love :1-. pizza]                  ; sequence pattern with a wild card
+[I love ? [:1- pizza bacon sausage]] ; nesed sequences, inner is a multiple alternative
+[:0. "I love pizza"]                 ; start pattern and a string pattern
 ```
 
 @[1] sequence pattern with a wild card
@@ -289,10 +289,10 @@ Top-down
 - Parts of speech, phrases, and entities
 
 ```clojure
-[he #pos/verb dog tree]
-[she love :phrase/NP]
-[I work at :entity/org]
-[it will be done in :entity/duration]
+[he #pos/verb dog tree]               ; parts of speech tag
+[she love :phrase/NP]                 ; noun phrase class
+[I work at :entity/org]               ; organization entity class
+[it will be done in :entity/duration] ; duration entity class
 ```
 
 @[1]
@@ -407,9 +407,10 @@ Top-down
 
 ### Conclusion
 
-- Clojure is a great choice for doing practical AI
+- Symbolic + data driven = practical AI
+- Clojure is a great choice
   - Lisp was and still is the language of symbolic AI
-  - Data orientation of Clojure makes it easy to integrate symbolic and data-driven AI
+  - Data orientation of Clojure makes it easy to integrate both
 
 ---
 
