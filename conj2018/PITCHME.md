@@ -36,7 +36,7 @@ Juji, Inc.
 ### Juji Builds Chatbot Platform
 @snapend
 
-@snap[west span-50]
+@snap[west span-55]
 @ul[](false)
 - It is hard to build **useful** chatbots
   - interview people to collect feedback
@@ -47,7 +47,7 @@ Juji, Inc.
 @ulend
 @snapend
 
-@snap[east span-50]
+@snap[east span-45]
 ![Juji chat](asset/img/juji-chat.png)
 @snapend
 
