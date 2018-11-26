@@ -53,11 +53,32 @@ Juji, Inc.
 
 ---
 
-### Juji Approach: Symbolic + Data Driven
+@snap[north span-100]
+### Juji Approach:<br>Symbolic + Data Driven
+@snapend
 
+@snap[west span-60]
+@ul[](false)
 - Symbolic system as the bones
 - Data-driven component as the flesh
-- In a Clojure DSL
+- Done in a Clojure DSL
+@ulend
+@snapend
+
+@snap[east span-40]
+```clojure
+(deftopic greeting
+  []
+
+  [:1 hello howdy hi]
+  [(user-first-name) ", nice to meet you!"]
+
+  [(> (max-similarity-score ["what's up"]) 0.9)]
+  ["Nothing much, you?"]
+  (handle-whats-up)
+```
+
+@snapend
 
 ---
 
