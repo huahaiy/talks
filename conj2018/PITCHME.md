@@ -2,13 +2,11 @@
 
 Huahai Yang, Ph.D.
 <br>
-Co-founder & CTO
-<br>
 Juji, Inc.
 
 ---
 @snap[west]
-@css[bio-about](Cognitive psychologist<br>Computer scientist)
+@css[bio-about](Psychologist<br>Computer scientist)
 <br><br><br>
 @css[bio-about](Coding in Clojure since 2012)
 @snapend
@@ -26,7 +24,7 @@ Juji, Inc.
 ### Juji Builds Chatbot Platform
 
 - It is easy to pass Turing Test, been done in 70s'
-- PARRY, 33 psychiatrists cannot tell from paranoid patients
+  - PARRY: 33 psychiatrists cannot tell it from paranoid patients
 
 ![Parry](asset/img/parry.png)
 
@@ -38,7 +36,7 @@ Juji, Inc.
 
 @snap[west span-60]
 @ul[](false)
-- It is hard to build **useful** chatbots
+- It is harder to build **useful** chatbots
   - interview people to collect feedback
   - help students learn
   - screen job candidates
@@ -159,6 +157,7 @@ Top-down
 
 ### Time to Bring back Symbolic AI
 
+- Most successful: expert systems (networks of production rules)
 - (Semi-)solving perception lays the foundation for symbolic AI
 - The same forces leading to the rise of DL apply to symbolic AI
   - More powerful hardware
@@ -201,14 +200,31 @@ Top-down
 
 ---
 
-### REP: a Chatbot Authoring DSL
+### Juji Platform
 
-- Used for interview/survey
+- Used for interviewing people
 - 2X completion rate, 26% better quality responses
 
 @quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
 
 @quote[very dynamic and very fluid conversation you have great quality thanks]
+
+---
+
+### Juji Architecture
+
+![Uji architecture](asset/img/juji-architecture.png)
+
+---
+
+###  EDN Data all the Way
+
+![Uji workflow](asset/img/juji-workflow.png)
+
+1. User select chat template
+2. User configure chat in GUI
+3. Generate script from GUI
+4. Chat: script compiles and runs
 
 ---
 
@@ -385,23 +401,6 @@ Top-down
   - Ad-lib queue
   - Exception queue
   - Main stack
-
----
-
-### Juji Architecture
-
-![Uji architecture](asset/img/juji-architecture.png)
-
----
-
-###  EDN Data all the Way
-
-![Uji workflow](asset/img/juji-workflow.png)
-
-1. User select chat template
-2. User configure chat in GUI
-3. Generate script from GUI
-4. Chat: script compiles and runs
 
 ---
 
