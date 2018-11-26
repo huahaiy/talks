@@ -70,7 +70,7 @@ Juji, Inc.
 ![Juji DSL](asset/img/dsl.png)
 @snapend
 
----?image=asset/img/ai-summer-75.png
+---?image=asset/img/ai-summer-80.png
 
 ### AI Summer is Back
 
