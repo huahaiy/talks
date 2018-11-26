@@ -6,7 +6,7 @@ Juji, Inc.
 
 ---
 
-### AI is Back
+### AI Summer is Back
 
 - Watson Jeopardy beats human
 - AlphaGo beats human
@@ -50,9 +50,18 @@ Juji, Inc.
 
 ### Perception may Feel like Intelligence
 
-- Intellectual problems may be solved in surprising ways as perceptual problems
+@snap[north span-100]
+Reporter: "How many moves do you see ahead while playing chess?"
+Capablanca: "Only one, but it's always the right one."
+@snapend
 
+@snap[west span-50]
+![Capablanca](asset/img/capablanca.jpg)
+@snapend
+
+@snap[east span-50]
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
+@snapend
 
 
 ---
