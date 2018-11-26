@@ -52,18 +52,18 @@ Juji, Inc.
 ### Perception Feels like Intelligence
 @snapend
 
-@snap[west span-40]
+@snap[west span-50]
 ![Capablanca](asset/img/capablanca.jpg)
 @snapend
 
-@snap[east span-40]
+@snap[east span-50]
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 @snapend
 
 @snap[south list-content span-100]
 @ul[](false)
-- @size[18](Reporter: "How many moves do you see ahead while playing chess?")
-- @size[18](Capablanca: "Only one, but it's always the right one.")
+- @size[14](Reporter: "How many moves do you see ahead while playing chess?")
+- @size[14](Capablanca: "Only one, but it's always the right one.")
 @ulend
 @snapend
 
