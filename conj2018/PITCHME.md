@@ -1,8 +1,80 @@
 ## A Clojure Fusion of Symbolic and Data Driven AI
 
-Huahai Yang
+Huahai Yang, Ph.D.
+<br>
+Co-founder & CTO
 <br>
 Juji, Inc.
+
+---
+@snap[west]
+@css[bio-about](Academically trained psychologist)
+<br><br><br>
+@fa[terminal fa-3x bio-fa](geek)
+<br><br><br>
+@css[bio-about](Clojure programmer since 2012)
+@snapend
+
+@snap[east bio]
+@css[bio-headline](Huahai Yang)
+<br>
+@css[bio-byline](@fa[github pad-fa] huahaiy @fa[twitter pad-fa])
+<br>
+![](asset/img/huahai.png)
+<br>
+@css[bio-tagline](Seeing is not believing)
+@snapend
+
+---
+
+@snap[north span-100]
+### Juji Builds Chatbot Platform
+
+- It is easy to pass Turing Test: been done in 70s' (PARRY)
+@snapend
+
+@snap[west list-content-concise span-50]
+@ul[](false)
+- The law should get those Italian crooks
+- Do you know any Italian crooks?
+- I try to avoid the underworld
+- Are you afraid of the underworld?
+- The mafia are the worst gangsters.
+- Are you connected with the Mafia?
+- You know, they know me.
+- How do they know you?
+- They spy on me.
+- Are you sure of all this?
+- You don't believe me?
+@ulend
+@snapend
+
+@snap[west list-content-concise span-50]
+@ul[](false)
+- Is the law after you?
+- The law should get those Italian crooks.
+- Do you mean the Mafia?
+- Let's talk about something else
+- Are you afraid of the Mafia
+- I'd rather not discuss it's
+- Perhaps you are paranoid about them?
+- You want to keep me in the hospital
+@ulend
+@snapend
+---
+
+### Juji Builds Chatbot Platform
+
+- It is harder to build **useful** conversational agents
+  - interview people to collect feedback
+  - help students learn concepts
+  - screen job candidates
+
+### Juji Approach: Symbolic + Data Driven
+
+- Symbolic system as the bones
+  - export systems: networks of production rules
+- Data-driven component as the flesh
 
 ---
 
@@ -35,20 +107,6 @@ Juji, Inc.
 ---
 
 @snap[north span-100]
-### Perception is not yet Intelligence
-@snapend
-
-@snap[west]
-![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
-@snapend
-
-@snap[east]
-<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="480"/>
-@snapend
-
----
-
-@snap[north span-100]
 ### Perception Feels like Intelligence
 @snapend
 
@@ -62,9 +120,23 @@ Juji, Inc.
 
 @snap[south list-content span-100]
 @ul[](false)
-- @size[14](Reporter: "How many moves do you see ahead while playing chess?")
-- @size[14](Capablanca: "Only one, but it's always the right one.")
+- @size[12](Reporter: "How many moves do you see ahead while playing chess?")
+- @size[12](Capablanca: "Only one, but it's always the right one.")
 @ulend
+@snapend
+
+---
+
+@snap[north span-100]
+### Perception is not yet Intelligence
+@snapend
+
+@snap[west]
+![Cognitive Psychology](asset/img/cognitive-psychology.jpg)
+@snapend
+
+@snap[east]
+<img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="480"/>
 @snapend
 
 
@@ -133,13 +205,6 @@ Top-down
   - for its potential for growth and adaptability, despite the rigidity
 - DL/ML component as the flesh
   - for its flexibility and ease of development, despite the obscurities
-
----
-
-### Build a Conversational Agent Platform
-
-- It is easy to pass Turing Test: been done in 70s' (Parry)
-- It is harder to build **useful** conversational agents
 
 ---
 
