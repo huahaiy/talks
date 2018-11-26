@@ -66,18 +66,7 @@ Juji, Inc.
 @snapend
 
 @snap[east span-40]
-```clojure
-(deftopic greeting
-  []
-
-  [:1 hello howdy hi]
-  [(user-first-name) ", nice to meet you!"]
-
-  [(> (max-similarity-score ["what's up"]) 0.9)]
-  ["Nothing much, you?"]
-  (handle-whats-up)
-```
-
+![Juji DSL](asset/img/dsl.png)
 @snapend
 
 ---
