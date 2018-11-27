@@ -32,7 +32,7 @@ logo-position : top-left
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "Juji - a Clojure fusion of symbolic and data driven AI"
+#footnote : "Juji - a Clojure fusion of symbolic and data driven AI"
 
 #
 # Highlight (Code) Setting
