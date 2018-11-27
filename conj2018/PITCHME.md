@@ -83,7 +83,6 @@ Juji, Inc.
 
 ### Rise of Deep Learning (DL)
 
-- Neural networks with many layers
 - Recently hugely successful
 - For many: @color[red](AI = DL)
 
