@@ -113,6 +113,8 @@ Juji, Inc.
 ![Bobby Fischer](asset/img/BobbyFischer.jpg)
 @snapend
 
+<br>
+
 @snap[south list-content span-100]
 @ul[](false)
 - @size[12](Reporter: "How many moves do you see ahead while playing chess?")
