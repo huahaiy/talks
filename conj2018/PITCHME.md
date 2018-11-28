@@ -4,7 +4,14 @@ Huahai Yang, Ph.D.
 <br>
 Juji, Inc.
 
+Note:
+
+- Good morning. my name is Huahai Yang
+- Today I will talk about a Clojure fusion of symbolic and data driven
+  artificial intelligence
+
 ---
+
 @snap[west]
 @css[bio-about](Psychologist<br>Computer scientist)
 <br><br><br>
@@ -21,14 +28,47 @@ Juji, Inc.
 @css[bio-tagline](Cofounder & CTO<br>Juji Inc.)
 @snapend
 
+Note:
+
+- I am academically trained as a psychologist.
+- And I have worked professionally as a computer scientist, at places like IBM Research and IBM Waston.
+- I have been coding primarily in Clojure since 2012
+- Now I am a co-founder of Juji
+
 ---
 
 ### Juji Builds Chatbot Platform
 
-- It is easy to pass Turing Test, done in 70s'
+- A challenging problem
+
+Note:
+
+- What does Juji do? Juji builds a platform for organizations to create
+  chatbots, or conversational agents.
+- Some of us know that building chatbots that talk like human is a challenging problem
+- Some may even say that it requires AGI, or at least the ability to pass the Turing test
+- You know, the test where a human cannot tell if she's talking with a human or a machine.
+
+---
+
+### Juji Builds Chatbot Platform
+
+- It is not hard to pass Turing Test, done in 70s'
   - PARRY: 33 psychiatrists cannot tell it from paranoid patients
 
 ![Parry](asset/img/parry.png)
+
+Note:
+
+- Well, actually Turing test has already been passed a long time ago.
+- PARRY, a chatbot developed by a psychiatrist at Stanford, did that in 1972.
+- PARRY simulated a paranoid patient. It has a mental model, where it tracks the
+  mental states such as the level of fear. It talks differently according to
+  its mental states
+- A panel of 33 psychiatrists can only tell it from real paranoid patients 48%
+  of time, basically at chance level, meaning that PARRY has passed the Turing test.
+- The lesson here is that, if you have a consistent and reasonable mental model,
+  it is easy to build a chatbot that talks like a human.
 
 ---
 
@@ -52,6 +92,17 @@ Juji, Inc.
 ![Juji chat](asset/img/juji-chat.png)
 @snapend
 
+Note:
+
+- What's harder, is to make the chatbot also do something useful for human.
+- That's what Juji's chatbots do, they have a purpose, an agenda.
+- For example, here is a part of our bot's conversation with a gamer, after it
+  has shown the gamer some game trailers. This is to collect data
+  for one of our marketing research customers. As you can see, in addition to
+  feedback to trailers, the bot also collects information about the gamer's
+  gaming preference to help with analysis. It doesn't give up easily.
+- There are many other use cases our chatbots have been deployed for:
+
 ---
 
 @snap[north span-100]
@@ -70,6 +121,19 @@ Juji, Inc.
 ![Juji DSL](asset/img/dsl.png)
 @snapend
 
+Note:
+
+- We are able to build our bots to do these non-trivial tasks, because we
+  developed a unique approach towards practical AI.
+- We took a hybrid approach that integrates the so called traditional, symbolic AI
+  with data driven, ML/DL based AI.
+- where we use symbolic system as the bones, the data driven components as the
+  flesh.
+- All these are done in a Clojure domain specific language we developed.
+- Here it is how DSL looks, and I will get to the detailed explanation latter.
+- Before we dive in, let us step back, I will show you why we take this approach
+  to AI.
+
 ---?image=asset/img/ai-summer-80.png
 
 ### AI Summer is Back
@@ -79,6 +143,11 @@ Juji, Inc.
 - Many AI assistants on phone and in home
 - Many commercial products in enterprises
 
+Note:
+
+- We all know that the AI summer is back. AI is in the news often these days.
+- READ
+
 ---
 
 ### Rise of Deep Learning (DL)
@@ -87,6 +156,15 @@ Juji, Inc.
 - For many: @color[red](AI = DL)
 
 ![DL](asset/img/dl.png)
+
+Note:
+
+- A lot of these, are riding on the success of deep learning, neural networks
+  that have many hidden layers.
+- DL has revolutionized computer vision and image processing, with numerous
+  applications. It can even be used to create digital arts.
+- In many people's mind, AI is all about deep learning.
+- So is it true? AI=DL? In the big scheme of AI, where does DL fit?
 
 ---
 
@@ -98,6 +176,13 @@ Juji, Inc.
   - known labels (classification)
   - desirable numbers (regression)
   - fixed length vectors (embedding)
+
+Note:
+
+- It is my opinion, as well as some others, that DL mainly solves the perception problem.
+- READ
+- Look what DL does, READ
+- These are all perceptual tasks.
 
 ---
 
@@ -121,6 +206,22 @@ Juji, Inc.
 - @size[12](Capablanca: "Only one, but it's always the right one.")
 @ulend
 @snapend
+
+Note:
+
+- People confuse perception with intelligence because many normally intellectual tasks
+  can be solved as perceptual tasks in surprising ways.
+- For example, playing chess is normally considered a task that requires a lot
+  of intelligence, logical reasoning, thinking ahead a lot of steps, and so on.
+- But that's not how chess masters solve it.
+- Chess masters turn the task into a perceptual one, where there's no
+  reasoning involved, just pattern recognition.
+- A reporter asked Capablanca, considered one of the best chess player of all
+  time, READ
+- That's why master players can play with many people at the same time, walking
+  around the room, look at the board and make a move almost immediately.
+- That's also how alphago solved Go, a much more complex game.
+- They have turn a search task into a perceptual task through training.
 
 ---
 
