@@ -335,7 +335,7 @@ Note:
 - Symbolic
   - Easy to build rigid/brittle systems
   - Hard to develop, for it is hard for human to think like machines
-  - In principle, fixable with *enough* human efforts
+  - In principle fixable, in practice, not so easy
 
 Note:
 
@@ -373,7 +373,7 @@ Note:
 
 ### Gibbon
 
-![Gibbon](asset/img/gibbon.png)
+![Gibbon](asset/img/gibbon.jpg)
 
 ---
 
