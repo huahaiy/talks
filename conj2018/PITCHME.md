@@ -45,9 +45,10 @@ Note:
 
 - What does Juji do? Juji builds a platform for organizations to create
   chatbots, or conversational agents.
-- Some of us know that building chatbots that talk like human is a challenging problem
+- Many of us know that building chatbots that talk like human is a challenging problem
 - Some may even say that it requires AGI, or at least the ability to pass the Turing test
-- You know, the test where a human cannot tell if she's talking with a human or a machine.
+- You know, the test where a machine passes the test if humans cannot tell if they
+  are talking with a human or the machine.
 
 ---
 
@@ -112,20 +113,31 @@ Note:
 
 ---
 
+### Juji Builds Chatbot Platform
+
+- Used for interviewing people
+- 2X completion rate, 76% better quality responses
+
+@quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
+
+@quote[very dynamic and very fluid conversation you have great quality thanks]
+
+---
+
 @snap[north span-100]
 ### Juji Approach:<br>Symbolic + Data Driven
 @snapend
 
 @snap[west span-50]
+![Juji DSL](asset/img/dsl.png)
+@snapend
+
+@snap[east span-50]
 @ul[](false)
 - Symbolic system as the bones
 - Data-driven component as the flesh
 - Done in a Clojure DSL
 @ulend
-@snapend
-
-@snap[east span-50]
-![Juji DSL](asset/img/dsl.png)
 @snapend
 
 Note:
@@ -334,7 +346,7 @@ Note:
 
 - Symbolic
   - Easy to build rigid/brittle systems
-  - Hard to develop, for it is hard for human to think like machines
+  - Hard to develop, hard for human to think like machines
   - In principle fixable, in practice, not so easy
 
 Note:
@@ -353,7 +365,7 @@ Note:
   as desired.
 - These problems are by design and are unlikely to be fixable without the help
   of some symbolic approach.
-- On the other hand, purely symbolic systems can often be brittle or rigid if the
+- On the other hand, purely symbolic systems can often be brittle if the
   developers are not careful.
 - It is very hard to develop very good symbolic systems, because it is difficult
   for human to think like a machine, e.g. to be self consistent, to be aware of
@@ -379,13 +391,33 @@ Note:
 
 ### Two Roads to Integration
 
-- Extract symbols out of sub-symbolic, then put symbols back
-    - Mimic nature
+- Implement symbolic phenomenon with sub-symbolic system
+    - Mimic brain
     - Not yet practical
 
 - Symbolic + sub-symbolic
     - Engineer's method
     - Practical today
+
+Note:
+
+- Ideally, we would like to integrate symbolic system and sub-symbolic systems.
+- There are two roads towards integration.
+- Ever since it was discovered that finite state machine can be implemented with
+  neural networks in the 1950s, there have been continuous effort to make
+  symbolic phenomenon to emerge within a sub-symbolic system. I consider the current
+  efforts in the DL community to implement memory, reasoning, and so on, belong to the same
+  venerable research tradition.
+- This approach feels like the right thing to do, because it seems to
+  be the way how brains does it.
+- Unfortunately, more than half century of research have not produced anything practical
+  yet. And I personally do not believe this approach will bear fruits in the
+  near future, because we are still far away from understanding how brain works.
+- Fortunately, just like aerospace engineers successfully built flying machines
+  without understanding how birds fly, I believe we can build practical AI
+  without having to mimic how brain does it.
+- That is to say, we can combine the strength of the symbolic and sub-symbolic
+  systems to build practical AI today.
 
 ---
 
@@ -396,16 +428,18 @@ Note:
 - DL/ML component as the flesh
   - for its flexibility and ease of development, despite the obscurities
 
----
+Note:
 
-### Juji Platform
-
-- Used for interviewing people
-- 2X completion rate, 26% better quality responses
-
-@quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
-
-@quote[very dynamic and very fluid conversation you have great quality thanks]
+- How would the combination work? At Juji, we did this by treating the symbolic
+  system as the bones, and data driven components as the flesh.
+- Symbolic system is chosen as the base system because it is amicable for human
+  observation and intervention. So it can easily grow and adapt as user requirements change,
+  despite the fact that such system are rigid, tend to be binary, all-or-nothing-like.
+- Data driven components, mainly based on ML/DL, are easier to develop, and also
+  generalize better in diverse situations because the performance degradation
+  tends to be smooth. However, these components are often black boxes, and the
+  inner working is not transparent to humans. Just a bunch of matrices. Not
+  human changeable.
 
 ---
 
