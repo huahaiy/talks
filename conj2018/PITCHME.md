@@ -330,7 +330,7 @@ Note:
 - Data driven
   - Easy to defeat/abuse by adversaries (e.g. Tay)
   - Hard to debug and bend it to the creator's will
-  - By design, unlikely to be fixable with data alone
+  - By design, unlikely to be fixable
 
 - Symbolic
   - Easy to build rigid/brittle systems
@@ -342,20 +342,41 @@ Note:
 - There are weaknesses for both data-driven and symbolic approaches.
 - The data driven approach rely on the quality of data, so an adversary can
   feed such system bad data to defeat or confuse the system. There are
-  many papers in image processing demonstrating some human undetectable changes,
-  for example, tweak a few pixels, can lead DL based vision system to give
-  complete wrong results.
--
+  many papers in image processing demonstrating this. For example,
+  adding some human undetectable changes, such as these noises,
+  can lead DL based vision system to give completely wrong answer.
+- In the chatbot world, an example is Microsoft's Tay chatbot, it was shutdown
+  within 24 hours of its release to the world, because it started to spew hate
+  speeches due to bad data some users feed to it.
+- Because the only way to change data-driven system is to feed it data, it is
+  often very difficult for the creator of such systems to make the system behave
+  as desired.
+- These problems are by design and are unlikely to be fixable without the help
+  of some symbolic approach.
+- On the other hand, purely symbolic systems can often be brittle or rigid if the
+  developers are not careful.
+- It is very hard to develop very good symbolic systems, because it is difficult
+  for human to think like a machine, e.g. to be self consistent, to be aware of
+  consequences of change in far away places.
+- Of course, in principle, these are fixable if the developer is really good and
+  put in a lot of effort.
+- But in practice, these weaknesses have prevented traditional AI to realize
+  their potentials.
 
-+++ DL is fooled
++++
+
+### DL is fooled
 
 ![Panda](asset/img/fool-dl.png)
 
-+++ Gibbon
++++
+
+### Gibbon
 
 ![Gibbon](asset/img/gibbon.png)
 
 ---
+
 ### Two Roads to Integration
 
 - Extract symbols out of sub-symbolic, then put symbols back
