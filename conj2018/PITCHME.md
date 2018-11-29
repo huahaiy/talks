@@ -342,8 +342,11 @@ Note:
 
 +++ DL is fooled
 
-![Parry](asset/img/fool-dl.png)
+![Panda](asset/img/fool-dl.png)
 
++++ Gibbon
+
+![Gibbon](asset/img/gibbon.png)
 
 ---
 ### Two Roads to Integration
