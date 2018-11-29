@@ -3,6 +3,9 @@
 Huahai Yang, Ph.D.
 <br>
 Juji, Inc.
+<br>
+<br>
+Nov. 29, 2018
 
 Note:
 
@@ -424,8 +427,8 @@ Note:
 
 - Symbolic system as the bones
   - for its potential for growth and adaptability, despite the rigidity
-- DL/ML component as the flesh
-  - for its flexibility and ease of development, despite the obscurities
+- DL/ML components as the flesh
+  - for its flexibility and ease of development, despite the obscurity
 
 Note:
 
