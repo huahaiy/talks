@@ -56,14 +56,19 @@ Note:
 - It is not hard to pass Turing Test, done in 70s'
   - PARRY: 33 psychiatrists cannot tell it from paranoid patients
 
-+++ PARRY sample
+Note:
+
+- Well, actually Turing test has already been passed a long time ago.
+- PARRY, a chatbot developed by a psychiatrist at Stanford, did that in 1972.
+
++++
+
+### PARRY sample
 
 ![Parry](asset/img/parry.png)
 
 Note:
 
-- Well, actually Turing test has already been passed a long time ago.
-- PARRY, a chatbot developed by a psychiatrist at Stanford, did that in 1972.
 - PARRY simulated a paranoid patient. It has a mental model, where it tracks the
   mental states such as the level of fear. It talks differently according to
   its mental states
@@ -279,10 +284,10 @@ Note:
 - This process itself is not accessible for human conscious, so we call these
   sub-symbolic process. Neural network can be thought of as an implementation of
   such a process.
-- However, bottom-up process is not enough for intelligence. In fact, more than
-  90% of information is lost by the time they arrive at brain for processing.
+- However, bottom-up process is not enough for intelligence.
+- In fact, more than 90% of information is lost by the time they arrive at brain for processing.
   So what brain constantly does, is to form hypothesis, or guesses about the
-  environment, the meaning is based on what the brain already knows and expects.
+  environment, the perception is based on what the brain already knows and expects.
 - Such hypothesis or goal driven processes, are the focus of the so called
   "traditional AI", also knows as symbolic AI. Symbolic means human-readable representations.
 
@@ -314,7 +319,9 @@ Note:
 - Expert systems rely on large knowledge base, the construction of knowledge base
   should benefit from more abundant realistic data we have today.
 - We also have better software tools and better engineering practices than
-  before. These should help with building robust symbolic system.
+  before.
+- Traditionally, expert systems were built with Lisp, now we have a modern Lisp
+  such as Clojure, so these systems should be easier to build than before.
 
 ---
 
