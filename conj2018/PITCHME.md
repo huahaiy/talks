@@ -91,8 +91,6 @@ Note:
   - receive visitors to sites
   - screen job candidates
   - check up on trainees
-  - help students learn
-  - recommend books
 @ulend
 @snapend
 
@@ -115,8 +113,9 @@ Note:
 
 ### Juji Builds Chatbot Platform
 
-- Used for interviewing people
-- 2X completion rate, 76% better quality responses
+- When used for survey
+  - 2X completion rate
+  - 76% better quality responses
 
 @quote[the whole time i was doing this survey it felt like i was talking to a friend and sharing the same common ground. i loved that i wish it didnt have to end]
 
