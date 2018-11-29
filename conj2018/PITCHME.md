@@ -131,6 +131,7 @@ Note:
 @snapend
 
 @snap[west span-50]
+REP sample code
 ![Juji DSL](asset/img/dsl.png)
 @snapend
 
@@ -150,8 +151,8 @@ Note:
   with data driven, ML/DL based AI.
 - where we use symbolic system as the bones, the data driven components as the
   flesh.
-- All these are done in a Clojure domain specific language we developed.
-- Here it is how DSL looks, and I will get to the detailed explanation latter.
+- All these are done in a Clojure domain specific language we developed, called REP
+- Here it is how the DSL looks, and I will get to the detailed explanation latter.
 - Before we dive in, let us step back, I will show you why we take this approach
   to AI.
 
@@ -449,6 +450,24 @@ Note:
 
 ![Uji architecture](asset/img/juji-architecture.png)
 
+Note:
+
+- Juji is used by business users to create chatbot. They interact with a
+  Web based graphical user interface to create content and configure options for
+  their bot
+- These user configurations are stored in Postgresql
+- A code generator takes the bot configuration and generate our DSL
+- Business users can also work directly with the DSL in an online IDE
+- The generated code and chat management information are stored in Datomic
+- When an end user starts a chat, if the script corresponding to the chat has
+  not been compiled, the system will fetch the script and compile it. The
+  compiler is mainly a state machine compiler that generates optimized state
+  machines for rules.
+- The rules contain ML/DL components, these are currently implemented in
+  python, deep learning is done with tensorflow, the code generator also run
+  ML/DL components, and access to these computation nodes are through kafka topics.
+- The runtime is stateful because each chat session creates a bot instance.
+
 ---
 
 ###  EDN Data all the Way
@@ -459,6 +478,12 @@ Note:
 2. User configure chat in GUI
 3. Generate script from GUI
 4. Chat: script compiles and runs
+
+Note:
+
+- Throughout the process, from the chat template user selected, the configuration
+  document for the chat, the script generated for the chat, and the compiled
+  script in FSM, are all represented in EDN format.
 
 ---
 
@@ -640,7 +665,6 @@ Note:
 
 ### Conclusion
 
-- AI is not DL
 - Symbolic + data driven = practical AI today
 - Clojure is a great choice for doing so
   - Lisp was and still is the language of symbolic AI
