@@ -131,7 +131,6 @@ Note:
 @snapend
 
 @snap[west span-50]
-REP sample code
 ![Juji DSL](asset/img/dsl.png)
 @snapend
 
@@ -139,7 +138,7 @@ REP sample code
 @ul[](false)
 - Symbolic system as the bones
 - Data-driven component as the flesh
-- Done in a Clojure DSL
+- Done in a Clojure DSL, REP
 @ulend
 @snapend
 
@@ -150,8 +149,8 @@ Note:
 - We took a hybrid approach that integrates the so called traditional, symbolic AI
   with data driven, ML/DL based AI.
 - where we use symbolic system as the bones, the data driven components as the
-  flesh.
-- All these are done in a Clojure domain specific language we developed, called REP
+  flesh. I will get to the details soon.
+- All these are done in a Clojure based domain specific language we developed, called REP
 - Here it is how the DSL looks, and I will get to the detailed explanation latter.
 - Before we dive in, let us step back, I will show you why we take this approach
   to AI.
@@ -455,9 +454,9 @@ Note:
 - Juji is used by business users to create chatbot. They interact with a
   Web based graphical user interface to create content and configure options for
   their bot
-- These user configurations are stored in Postgresql
-- A code generator takes the bot configuration and generate our DSL
-- Business users can also work directly with the DSL in an online IDE
+- These user configurations are stored in Postgres
+- A code generator takes the bot configuration and generates REP code
+- Business users can also work directly with REP code in an online IDE
 - The generated code and chat management information are stored in Datomic
 - When an end user starts a chat, if the script corresponding to the chat has
   not been compiled, the system will fetch the script and compile it. The
@@ -465,7 +464,7 @@ Note:
   machines for rules.
 - The rules contain ML/DL components, these are currently implemented in
   python, deep learning is done with tensorflow, the code generator also run
-  ML/DL components, and access to these computation nodes are through kafka topics.
+  ML/DL functinality, and access to these computation nodes are through kafka topics.
 - The runtime is stateful because each chat session creates a bot instance.
 
 ---
@@ -484,6 +483,8 @@ Note:
 - Throughout the process, from the chat template user selected, the configuration
   document for the chat, the script generated for the chat, and the compiled
   script in FSM, are all represented in EDN format.
+- We can develop and evolve each piece in relative isolation, because all we
+  need to worry about is input and output data.
 
 ---
 
@@ -513,9 +514,9 @@ Note:
 - Followup topics are primed when a rule fired
 
 ```clojure
-[:1 hello hi hey howdy] ; trigger: an alternative pattern
+[:1 hello hi hey howdy] ; alternative pattern trigger
 ["Nice to meet you!"]   ; action: a string output
-(talk-about-wheather)   ; a followup topic invocation
+(talk-about-wheather)   ; followup topic invocation
 ```
 
 @[1]
@@ -547,9 +548,9 @@ Note:
 - Token based regular expressions
 
 ```clojure
-[I love :1-. pizza]                  ; sequence pattern with a wild card
-[I love ? [:1- pizza bacon sausage]] ; nesed sequences, inner is a multiple alternative
-[:0. "I love pizza"]                 ; start pattern and a string pattern
+[I love :1-. pizza]        ; sequence with a wild card
+[love ? [:1- pizza bacon]] ; nested, inner alternative
+[:0. "I love pizza"]       ; start and string pattern
 ```
 
 @[1] sequence pattern with a wild card
@@ -560,14 +561,14 @@ Note:
 
 ### ML Based Tag and Class Patterns
 
-- Tags for annotating text, keywords for placeholders of content classes
-- Parts of speech, phrases, and entities
+- Tags for annotating text
+- keywords for placeholders of content classes
 
 ```clojure
-[he #pos/verb dog tree]               ; parts of speech tag
-[she love :phrase/NP]                 ; noun phrase class
-[I work at :entity/org]               ; organization entity class
-[it will be done in :entity/duration] ; duration entity class
+[he #pos/verb dog tree]   ; parts of speech tag
+[she love :phrase/NP]     ; noun phrase class
+[I work at :entity/org]   ; organization entity class
+[did in :entity/duration] ; duration entity class
 ```
 
 @[1]
