@@ -56,6 +56,8 @@ Note:
 - It is not hard to pass Turing Test, done in 70s'
   - PARRY: 33 psychiatrists cannot tell it from paranoid patients
 
++++ PARRY sample
+
 ![Parry](asset/img/parry.png)
 
 Note:
@@ -101,7 +103,7 @@ Note:
   for one of our marketing research customers. As you can see, in addition to
   feedback to trailers, the bot also collects information about the gamer's
   gaming preference to help with analysis. It doesn't give up easily.
-- There are many other use cases our chatbots have been deployed for:
+- There are many other use cases that chatbots have been deployed for:
 
 ---
 
@@ -209,19 +211,19 @@ Note:
 
 Note:
 
-- People confuse perception with intelligence because many normally intellectual tasks
+- People confuse perception with intelligence because many intellectual tasks
   can be solved as perceptual tasks in surprising ways.
 - For example, playing chess is normally considered a task that requires a lot
   of intelligence, logical reasoning, thinking ahead a lot of steps, and so on.
 - But that's not how chess masters solve it.
-- Chess masters turn the task into a perceptual one, where there's no
+- Chess masters turn the task into a perceptual one, where there's not much
   reasoning involved, just pattern recognition.
-- A reporter asked Capablanca, considered one of the best chess player of all
+- For example, Capablanca, considered one of the best chess player of all
   time, READ
 - That's why master players can play with many people at the same time, walking
   around the room, look at the board and make a move almost immediately.
 - That's also how alphago solved Go, a much more complex game.
-- They have turn a search task into a perceptual task through training.
+- They have turn a search task into a perceptual task through extensive training.
 
 ---
 
@@ -237,11 +239,19 @@ Note:
 <img src="asset/img/cognitive-psychology-toc.png" alt="Cognitive Psychology TOC" width="480"/>
 @snapend
 
+Note:
+
+- Not all tasks requiring intelligence can be turned into perceptual tasks.
+- If we look at any textbook on cognitive psychology, perception is just one
+  chapter among many, that deals with topics such as attention, memory,
+  mental model, knowledge representation, language, problem solving, reasoning,
+  the list goes on.
+- They are all part of human intelligence.
 
 ---
 
 @snap[north span-100]
-### Perception Cannot be Solved with Data Alone
+### Intelligence Cannot be Solved with Data Alone
 @snapend
 
 @snap[west list-content-concise span-40]
@@ -260,16 +270,51 @@ Top-down
 @ulend
 @snapend
 
+Note:
+
+- Most of the mental processes listed above cannot be solved with data alone.
+- Data driven process is a kind of bottom-up process, where raw sensory
+  information, such as light, sound, enter from the environment into
+  sensory organ, is then turned into a perception in the brain.
+- This process itself is not accessible for human conscious, so we call these
+  sub-symbolic process. Neural network can be thought of as an implementation of
+  such a process.
+- However, bottom-up process is not enough for intelligence. In fact, more than
+  90% of information is lost by the time they arrive at brain for processing.
+  So what brain constantly does, is to form hypothesis, or guesses about the
+  environment, the meaning is based on what the brain already knows and expects.
+- Such hypothesis or goal driven processes, are the focus of the so called
+  "traditional AI", also knows as symbolic AI. Symbolic means human-readable representations.
+
 ---
 
 ### Time to Bring back Symbolic AI
 
-- Most successful: expert systems (networks of production rules)
 - (Semi-)solving perception lays the foundation for symbolic AI
 - The same forces leading to the rise of DL apply to symbolic AI
-  - More powerful hardware
+  - More powerful hardware, help graph search
+  - More abundant realistic data, help knowledge base construction
   - Better software tools and practices
-  - More abundant realistic data
+
+Note:
+
+- To solve artificial intelligence, both bottom-up and top-down processes are
+  necessary.
+- With the rise of DL, we may say that the bottom-up perception problem is
+  semi-solved. It's not entirely solved because what DL learned may not be of
+  the same nature as human perception. But for many problems, we consider it is
+  good enough.
+- With such a more solid perceptual foundation than before, it is my opinion
+  that now it is the time to bring back symbolic AI.
+- The same forces leading to the rise of DL apply to symbolic AI as well.
+- The most successful of symbolic AI were expert systems, basically large graph of
+  production rules. A production rule is just an if-then statements.
+- Many symbolic AI problems rely on solution to graph search problems, and graph
+  search can leverage the latest advances in GPU hardware, just like DL does.
+- Expert systems rely on large knowledge base, the construction of knowledge base
+  should benefit from more abundant realistic data we have today.
+- We also have better software tools and better engineering practices than
+  before. These should help with building robust symbolic system.
 
 ---
 
@@ -278,12 +323,27 @@ Top-down
 - Data driven
   - Easy to defeat/abuse by adversaries (e.g. Tay)
   - Hard to debug and bend it to the creator's will
-  - By design, unlikely to be fixable
+  - By design, unlikely to be fixable with data alone
 
 - Symbolic
   - Easy to build rigid/brittle systems
   - Hard to develop, for it is hard for human to think like machines
   - In principle, fixable with *enough* human efforts
+
+Note:
+
+- There are weaknesses for both data-driven and symbolic approaches.
+- The data driven approach rely on the quality of data, so an adversary can
+  feed such system bad data to defeat or confuse the system. There are
+  many papers in image processing demonstrating some human undetectable changes,
+  for example, tweak a few pixels, can lead DL based vision system to give
+  complete wrong results.
+-
+
++++ DL is fooled
+
+![Parry](asset/img/fool-dl.png)
+
 
 ---
 ### Two Roads to Integration
@@ -513,6 +573,7 @@ Top-down
 
 ### Conclusion
 
+- AI is not DL
 - Symbolic + data driven = practical AI today
 - Clojure is a great choice for doing so
   - Lisp was and still is the language of symbolic AI
